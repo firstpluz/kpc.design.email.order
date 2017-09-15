@@ -1,0 +1,142 @@
+/* CLIENT-SPECIFIC STYLES */
+
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+.clear{clear: both;}
+li{list-style: none;}
+/* RESET STYLES */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table{border-collapse:collapse !important;}
+body{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+.left{padding-left: 20px; width: 45%; float: left; margin-top: 20px;}
+.right{float: left;  width: 45%; margin-top: 20px; text-align: center;}
+.qrcode{padding-left: 20px; float: left; margin-top: 10px;}
+#zebra-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* default styles for the list elements */
+#zebra-list li {
+  background: #F0F5FB;
+  border: 1px solid #D0E7FF;
+  width: 200px;
+}
+
+/* styles for alternate rows */
+/* IE < v9 will fall back to the default styles */
+#zebra-list li:nth-child(even) {
+  background: #fff;
+  border: 1px solid #D0E7FF;
+}
+
+#zebra-list li a:link,
+#zebra-list li a:visited {
+  display: block;
+  padding: 3px 6px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  color: black;
+}
+
+/* iOS BLUE LINKS */
+.appleBody a {color:#68440a; text-decoration: none;}
+.appleFooter a {color:#999999; text-decoration: none;}
+
+/* CUSTOM STYLES */
+
+    /* CARD STYLING */
+
+        a[class="article-link"]{
+            font-weight: bold !important;
+        }
+
+        a:hover[class="article-link"]{
+            color: #2b2b2b !important;
+            border-bottom: 1px dotted #2b2b2b !important;
+        }
+
+        a:visited[class="article-link"]{
+            color: #2b2b2b !important;
+            border-bottom: 1px dotted #2b2b2b !important;
+        }
+
+/* MOBILE STYLES */
+@media screen and (max-width: 525px) {
+
+    /* ALLOWS FOR FLUID TABLES */
+    table[class="wrapper"]{
+      width:100% !important;
+    }
+
+    /* FULL-WIDTH TABLES */
+    table[class="responsive-table"]{
+      width:100%!important;
+    }
+
+    /* ADJUST BUTTONS ON MOBILE */
+    td[class="mobile-wrapper"]{
+        padding: 30px 5% 30px 5% !important;
+    }
+
+    a[class="mobile-button"]{
+        width:85% !important;
+        padding: 15px !important;
+        border: 0 !important;
+        font-size: 16px !important;
+    }
+
+    /* CUSTOM MOBILE STYLING */
+
+        /* CARD STYLING */
+        td[class="padding-logo"]{
+          padding: 5% 10% 5% 10% !important;
+          text-align: left !important;
+          font-size: 18px !important;
+        }
+
+        td[class="padding-headline"]{
+          padding: 10% 10% 0 10% !important;
+          text-align: left !important;
+          font-size: 18px !important;
+        }
+
+        td[class="padding-copy"]{
+          padding: 5% 10% 10% 10% !important;
+          text-align: left !important;
+          font-size: 14px !important;
+          line-height: 26px !important;
+        }
+
+        td[class="button-padding-copy"]{
+          padding: 2% 0 2% 0 !important;
+          text-align: center;
+        }
+
+        td[class="button-padding"]{
+          padding: 0% 10% 10% 10% !important;
+          text-align: center;
+        }
+
+        a[class="article-link"]{
+            font-weight: bold !important;
+        }
+
+        a:hover[class="article-link"]{
+            color: #2b2b2b !important;
+            border-bottom: 1px dotted #2b2b2b !important;
+        }
+
+        a:visited[class="article-link"]{
+            color: #2b2b2b !important;
+            border-bottom: 1px dotted #2b2b2b !important;
+        }
+}
